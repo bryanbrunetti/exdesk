@@ -1,0 +1,22 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": [],
+      "method": "get",
+      "options": {
+        "basic_auth": [
+          "email@domain.com",
+          "mypasswordshh"
+        ]
+      },
+      "request_body": "",
+      "url": "https://test.desk.com/api/v2/cases?per_page=1&fields=subject"
+    },
+    "response": {
+      "body": "{\"total_entries\":77,\"page\":1,\"_links\":{\"self\":{\"href\":\"/api/v2/cases?fields=subject&page=1&per_page=1\",\"class\":\"page\"},\"first\":{\"href\":\"/api/v2/cases?fields=subject&page=1&per_page=1\",\"class\":\"page\"},\"last\":{\"href\":\"/api/v2/cases?fields=subject&page=77&per_page=1\",\"class\":\"page\"},\"previous\":null,\"next\":{\"href\":\"/api/v2/cases?fields=subject&page=2&per_page=1\",\"class\":\"page\"}},\"_embedded\":{\"entries\":[{\"subject\":\"Hi,I need help\",\"_links\":{\"self\":{\"href\":\"/api/v2/cases/686\",\"class\":\"case\"},\"message\":{\"href\":\"/api/v2/cases/686/message\",\"class\":\"email\"},\"customer\":{\"href\":\"/api/v2/customers/50458320\",\"class\":\"customer\"},\"labels\":{\"href\":\"/api/v2/cases/686/labels\",\"class\":\"label\"},\"assigned_user\":null,\"assigned_group\":{\"href\":\"/api/v2/groups/185331\",\"class\":\"group\"},\"locked_by\":null,\"history\":{\"href\":\"/api/v2/cases/686/history\",\"class\":\"history\"},\"case_links\":{\"href\":\"/api/v2/cases/686/links\",\"class\":\"case_link\",\"count\":0},\"macro_preview\":{\"href\":\"/api/v2/cases/686/macros/preview\",\"class\":\"macro_preview\"},\"replies\":{\"href\":\"/api/v2/cases/686/replies\",\"class\":\"reply\",\"count\":10},\"feedbacks\":null,\"draft\":{\"href\":\"/api/v2/cases/686/replies/draft\",\"class\":\"reply\"},\"notes\":{\"href\":\"/api/v2/cases/686/notes\",\"class\":\"note\",\"count\":0},\"attachments\":{\"href\":\"/api/v2/cases/686/attachments\",\"class\":\"attachment\",\"count\":0}}}]}}",
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]
