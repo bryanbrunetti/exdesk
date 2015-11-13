@@ -1,0 +1,22 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": [],
+      "method": "delete",
+      "options": {
+        "basic_auth": [
+          "email@domain.com",
+          "mypasswordshh"
+        ]
+      },
+      "request_body": "",
+      "url": "https://test.desk.com/api/v2/labels/2816817"
+    },
+    "response": {
+      "body": "#Reference<0.0.6.183>",
+      "status_code": 204,
+      "type": "ok"
+    }
+  }
+]

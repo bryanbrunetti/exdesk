@@ -1,0 +1,22 @@
+[
+  {
+    "request": {
+      "body": "{\"types\":[\"case\"],\"name\":\"A Label\",\"enabled\":true,\"description\":\"a description\",\"color\":\"purple\"}",
+      "headers": [],
+      "method": "post",
+      "options": {
+        "basic_auth": [
+          "email@domain.com",
+          "mypasswordshh"
+        ]
+      },
+      "request_body": "",
+      "url": "https://test.desk.com/api/v2/labels"
+    },
+    "response": {
+      "body": "{\"id\":2816853,\"name\":\"A Label\",\"types\":[\"case\"],\"description\":\"a description\",\"enabled\":true,\"color\":\"purple\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/2816853\",\"class\":\"label\"}}}",
+      "status_code": 201,
+      "type": "ok"
+    }
+  }
+]
