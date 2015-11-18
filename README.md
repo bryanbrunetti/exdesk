@@ -19,3 +19,25 @@ The package can be installed via:
         def application do
           [applications: [:exdesk]]
         end
+
+## Usage
+  To configure the authorization globally:
+  
+    ExDesk.configure(
+      site_name: "yoursite.desk.com",
+      email: "your@email.com",
+      password: "yourpassword"
+      )
+  Or scoped to the current process:
+  
+    ExDesk.configure(:process,
+      site_name: "yoursite.desk.com",
+      email: "your@email.com",
+      password: "yourpassword"
+      )  
+
+  Fetching a list of the first ten cases:
+  
+	ExDesk.list("cases", [per_page: 10, sort_field: "created_at", sort_direction: "asc"])
+	
+This will return a `Map` of the JSON response described here: [http://dev.desk.com/API/cases/#list]( http://dev.desk.com/API/cases/#list )
