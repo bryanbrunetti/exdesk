@@ -7,6 +7,15 @@ defmodule ExDeskTest do
     :ok
   end
 
+  test "Authenticating with EXDESK_CONFIG ENV variable" do
+    System.put_env("EXDESK_CONFIG", "test-env.desk.com,env@env.com,myenvpassword")
+    assert ExDesk.config == [site_name: "test-env.desk.com", email: "env@env.com", password: "myenvpassword"]
+
+    on_exit fn ->
+      System.put_env("EXDESK_CONFIG", "")
+    end
+  end
+
   test "Authenticating and accessing cases via HTTP Basic" do
     use_cassette "basic_auth" do
       cases = ExDesk.list("cases", [per_page: 1, fields: "subject"])
