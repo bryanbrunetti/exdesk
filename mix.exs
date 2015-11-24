@@ -19,6 +19,7 @@ defmodule ExDesk.Mixfile do
 
   defp deps do
     [
+      {:oauth, github: "tim/erlang-oauth"},
       {:httpoison, "~> 0.8.0"},
       {:poison, "~> 1.5"},
       {:exvcr, "~> 0.6", only: [:test, :dev]}
