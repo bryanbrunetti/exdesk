@@ -40,7 +40,7 @@ The package can be installed via:
       password: "yourpassword"
       )  
 
-All responses will be a `Map` of the response from This will return a `Map` ozf the JSON response described here:
+All responses will be a `Map` of the response from This will return a `Map` of the JSON response described here:
 [http://dev.desk.com/API/using-the-api]( http://dev.desk.com/API/using-the-api )
 
   Fetching a list of the first ten cases:
